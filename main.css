@@ -1,0 +1,17 @@
+#banner {
+    height: 30vh;
+    max-height: 100%;
+    background-image: url("banner.jpg");
+}
+.grid-container { 
+    /* ^split into box overall layout  */
+    display: grid; 
+    grid-template-columns: 25% 75%;
+    background-color: rgb(158, 239, 239);
+    padding: 5px; 
+}
+.grid-container > div {
+    background-color: rgb(239, 186, 158);
+    text-align: left;
+    padding: 5 px ;
+}
