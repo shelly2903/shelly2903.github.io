@@ -21,7 +21,7 @@ section, summary, time, mark, audio, video {
 	margin: 0;
 	padding: 0;
 	border: 0;
-	font-size: 100%;
+	font-size: 50px;
 	font: inherit;
 	vertical-align: baseline;}
 
@@ -29,35 +29,118 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;}
 
-/* #header2{
-	background-color: rgb(255, 255, 255);
-padding: 20px;
-} this code creates a white space around the nav bar AND the entire website, it is not needed for assessment and hence has beem commented out*/ 
-
-.line_style { /*hr in the about me check the connection NOT being called up*/
-	border-style: dotted;
-	border-color: #000000;
-	height: 2 px;
+	.grid-container {
+		display: grid;
+		grid-template-columns: 50% 50%; /* Two columns with equal width */
+		gap: 10px;
+		background-color:#b3e3f7;
+		padding: 10px;
+	  }
+	  
+	  .grid-container > div {
+		background-color:#ddf8fe; 
+		text-align: center;
+		padding: 0px 0;
+		font-size: 30px;
+	}
+	.box7,
+    .box8 {
+       grid-column: span 2; /* Make these items span both columns */
+      }
+	  .box1,
+	  .box2,
+	  .box3,
+	  .box4,
+	  .box5,
+	  .box6 {
+		grid-column: span 1;
+	  }
+#body-background { /* colour of background in resource page */
+background-color: #ddf8fe;  
+position: relative; 
+top: 0px;  
+text-align: center;
 }
 /* .top_background{ /*this is an ID i made myself to change the layout of the resources page
 	display: flex}*/
 
-.grid-container { /*this changes the layout of resources but colour of all website pages?*/
-	display: flex;
-	grid-template-columns: 25% 25% 25% 25%; 
-	gap: 5px;
-	background-color: #c4e4f1;
-	padding: 10px;
+#motto {  /*change the font and alignment of the quotes on classroom managament plan, this is an ID (not class because only need in on one page) I made myself*/ 
+	font-family: 'Times New Roman', Times, serif;
+	text-align: center;
+	position: relative; 
+    top: 10px; 
+}
+#dotted { /*used to add a line under the about me title, and then change the style of it on the about me page */
+	border-top: 2px dotted #b20eed;
+	align-content: center;
+	width: 25%;
+}
+.header_main { /*aligns 'about me page to currently in center, to do so for others'*/ 
+	text-align: center;
+}
+.image_featured_2 img{ /*used to size and scale the weclome image on top of welcome page, not quite the banner*/
+	width: 400px; 
+	height: 200px; 
+	border: 5px solid #000000; 
+}
+/* #img_border {       /*border on about me page image, actual image in exising CSS code, under image featured 
+	border: 3px dashed #b20eed;
+	width: 300px;
+	height: 300px; 
+	margin-left: 300px;
+}
+	*/
+
+#description { /*image description for those who can not see image, fine print*/ 
+	color:#8d898d; 
+	font-size: 12px;
+	margin-left:40px;
+	text-decoration:double;
+}
+.margin_major {   /*alignment of text in classroom, skills and experience, left hand side*/ 
+	margin-left: 20px; 
+	padding: 0; 
+}
+.alignment { /*... of text / content on about me page*/ 
+	margin-left: 200px; 
+    margin-right: 200px;
+}
+#line_style1 { /* text box above about me page */
+	border: 2px solid #b20eed;
+	padding: 5px;         
+	margin: 20px;           
+	border-radius: 8px;     
   }
-
-
-
-body {
-	line-height: 1;
+#line_style1 p,
+#line_style1 ol,
+#line_style1 ul {
+	margin: 0; 
+} 
+#line_style2 { /* textbox border teaching goals about me page */
+	border: 2px solid #b20eed; 
+	padding: 5px;          
+	margin: 20px;           
+	border-radius: 8px;     
+  }
+#line_style2 li {
+	margin-bottom: 0;
+	margin-left: 30px;
+}
+#text_box {
+	border: 4px solid #0a59eb; /* Creates the box border */
+	padding: 5px;          /* Adds space inside the box */
+	margin: 20px;           /* Adds space outside the box */
+	margin-top: 5px;        /*add space on top of box*/ 
+	border-radius: 8px;     /*  rounds the corners*/
+}
+#text_box li {
+	margin-bottom: 0;
+	margin-left: 30px;
 }
 
-ol, ul {
-	list-style: none;
+/*START OF EXISITING CSS CODE, HOWEVER SMALL CHANGES HAVE BEEN MADE SINCE ORGINAL COPY, INCLUDING THE FURTHER ADDITION OF CLASS AND ID ATTRIBUTES*/
+body {
+	line-height: 1;
 }
 
 blockquote, q {
@@ -122,7 +205,7 @@ input, select, textarea {
 
 	body, input, select, textarea {
 		color: #474747;
-		font-family: 'Source Sans Pro', sans-serif;
+		font-family:Verdana, Geneva, Tahoma, sans-serif;
 		font-size: 16pt;
 		font-weight: 300;
 		line-height: 1.65em;
@@ -133,7 +216,7 @@ input, select, textarea {
 		-webkit-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out, opacity 0.2s ease-in-out;
 		-ms-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out, opacity 0.2s ease-in-out;
 		transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out, opacity 0.2s ease-in-out;
-		color: #37c0fb;
+		color: #0f5ac3;
 		text-decoration: none;
 		border-bottom: dotted 1px;
 	}
@@ -178,7 +261,7 @@ input, select, textarea {
 	}
 
 	h3 {
-		font-size: 1.2em;
+		font-size: 1em;
 		letter-spacing: -0.025em;
 	}
 
@@ -206,7 +289,7 @@ input, select, textarea {
 		padding: 1em 0 1em 2em;
 	}
 
-/* Container */
+/* Container PLEASE NOTE !¡!¡ WIDTH OF IPHONE 13 MINI SCREEN IS 1080 PX AND 2340 PX IN HEIGHT CHECK THIS OUT WITH FOLLOWING CODE BELOW !¡!¡*/
 
 	.container {
 		margin: 0 auto;
@@ -2022,7 +2105,7 @@ input, select, textarea {
 		footer.major {
 			padding-top: 3em;
 		}
-.quick-contacts {
+.quick-contacts { /*this is a class I added for the footer to change the contact section*/ 
 	text-align: center;
     padding: 15 px; /*does not appear to work the padding to create space come back to*/
 }
@@ -2131,10 +2214,11 @@ input, select, textarea {
 			display: block;
 			margin: 0 0 2em 250px;
 		}
-
 			.image.featured img {
 				display: block;
-				width: 50%;
+				width: 600px;
+				height: 300px; 
+
 			}
 
 /* Icon */
@@ -2212,6 +2296,8 @@ input, select, textarea {
 
 		ol li {
 			padding-left: 0.25em;
+			text-align: left;
+			font-size: 20px;
 		}
 
 	ul {
@@ -2235,6 +2321,11 @@ input, select, textarea {
 			line-height: 2.5em;
 			padding-left: 0;
 		}
+
+	ol.links li {
+		color:rgba(5, 0, 8, 0.75)
+
+	}
 
 /* Icons */
 
@@ -2571,7 +2662,7 @@ input, select, textarea {
 	#header {
 		text-align: center;
 		padding: 3em 0 0 0;
-		background-color: #fff;
+		background-color: #ffffff;
 		background-image: url("images/bg02.png"), url("images/bg02.png"), url("images/bg01.png");
 		background-position: top left,					top left,					top left;
 		background-size: 100% 6em,					100% 6em,					auto;
@@ -2597,6 +2688,7 @@ input, select, textarea {
 		background-image: -ms-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.3)), url("images/bg01.png");
 		background-image: linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.3)), url("images/bg01.png");
 		padding: 0;
+		text-align: center;
 	}
 
 		#nav:after {
@@ -2616,7 +2708,7 @@ input, select, textarea {
 			#nav > ul > li {
 				position: relative;
 				display: inline-block;
-				font-family:'Lucida Sans'; 
+				font-family:'Lucida Sans';  
 				margin-left: 1em;
 			}
 
@@ -2653,7 +2745,7 @@ input, select, textarea {
 						bottom: -0.5em;
 						left: 50%;
 						margin-left: -0.375em;
-						background-color: #37c0fb;
+						background-color: #f37878;
 						background-image: url("images/bg01.png");
 					}
 
@@ -2713,6 +2805,8 @@ input, select, textarea {
 		}
 
 /* Banner */
+
+
 
 	#banner {
 		background-position: center center;
@@ -2854,6 +2948,7 @@ input, select, textarea {
 
 /*footer for new pages I created*/
 .new_footer {
+	font-family: 'Times New Roman', Times, serif; 
 	background-color: #b1e1f6;
 	padding: 0px;
 }
@@ -2873,7 +2968,7 @@ input, select, textarea {
 	}
 
 	.new_footer .icons {
-		text-align: center;
+		text-align: 500px;
 		margin: 0;
 	}
 
@@ -2934,7 +3029,10 @@ input, select, textarea {
 				ol li {
 					padding-left: 0.25em;
 				}
-
+	         ol a:hover {
+					color: #fb8237;
+					border-bottom-color: transparent;
+				}
 		/* Icons */
 
 			ul.icons li a, ul.icons li span {
@@ -2955,6 +3053,7 @@ input, select, textarea {
 
 			#banner {
 				height: 20em;
+		
 			}
 
 		/* Wrapper */
